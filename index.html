@@ -1,0 +1,94 @@
+import React from 'react';
+import { Brain, Activity, Users, ChevronRight, Database, Trophy } from 'lucide-react';
+
+const LabWebsite = () => {
+  return (
+    <div className="min-h-screen bg-gray-50">
+      {/* Hero Section */}
+      <header className="bg-blue-900 text-white">
+        <div className="container mx-auto px-6 py-16">
+          <h1 className="text-4xl font-bold mb-4">Sports Technology Lab</h1>
+          <p className="text-xl mb-8">Advancing the intersection of AI, sports analytics, and consumer behavior</p>
+          <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-lg flex items-center">
+            Learn More <ChevronRight className="ml-2" size={20} />
+          </button>
+        </div>
+      </header>
+
+      {/* Research Areas Section */}
+      <section className="py-16">
+        <div className="container mx-auto px-6">
+          <h2 className="text-3xl font-bold mb-12 text-center">Research Areas</h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <div className="mb-4">
+                <Brain className="text-blue-600" size={40} />
+              </div>
+              <h3 className="text-xl font-semibold mb-3">AI in Sports</h3>
+              <p className="text-gray-600">Developing advanced AI systems for performance analysis, injury prevention, and game strategy optimization.</p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <div className="mb-4">
+                <Activity className="text-blue-600" size={40} />
+              </div>
+              <h3 className="text-xl font-semibold mb-3">Sports Analytics</h3>
+              <p className="text-gray-600">Leveraging data analytics to enhance athletic performance and team decision-making processes.</p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <div className="mb-4">
+                <Users className="text-blue-600" size={40} />
+              </div>
+              <h3 className="text-xl font-semibold mb-3">Consumer Behavior</h3>
+              <p className="text-gray-600">Understanding fan engagement and sports consumption patterns through data-driven research.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Latest Projects Section */}
+      <section className="bg-gray-100 py-16">
+        <div className="container mx-auto px-6">
+          <h2 className="text-3xl font-bold mb-12 text-center">Latest Projects</h2>
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <div className="flex items-center mb-4">
+                <Database className="text-blue-600 mr-3" size={24} />
+                <h3 className="text-xl font-semibold">Machine Learning for Player Performance</h3>
+              </div>
+              <p className="text-gray-600">Developing predictive models for athlete performance using advanced machine learning techniques.</p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <div className="flex items-center mb-4">
+                <Trophy className="text-blue-600 mr-3" size={24} />
+                <h3 className="text-xl font-semibold">Fan Engagement Analytics</h3>
+              </div>
+              <p className="text-gray-600">Analyzing digital fan behavior to enhance sports marketing and engagement strategies.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section className="py-16">
+        <div className="container mx-auto px-6 text-center">
+          <h2 className="text-3xl font-bold mb-8">Get in Touch</h2>
+          <p className="text-gray-600 mb-8">Interested in collaborating or learning more about our research?</p>
+          <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-lg">
+            Contact Us
+          </button>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-gray-800 text-white py-8">
+        <div className="container mx-auto px-6">
+          <div className="text-center">
+            <p>© 2025 Sports Technology Lab. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  );
+};
+
+export default LabWebsite;
